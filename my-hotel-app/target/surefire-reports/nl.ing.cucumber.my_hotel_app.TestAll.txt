@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: nl.ing.cucumber.my_hotel_app.TestAll
+-------------------------------------------------------------------------------
+Tests run: 113, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 80.844 sec <<< FAILURE!
+Then Message "Enter Password" is displayed(| atostestuser |  | Enter Password |)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at nl.ing.cucumber.stepDefinitions.LoginSteps.message_is_displayed(LoginSteps.java:73)
+	at ?.Then Message "Enter Password" is displayed(login.feature:12)
+
+| atostestuser |  | Enter Password |  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at nl.ing.cucumber.stepDefinitions.LoginSteps.message_is_displayed(LoginSteps.java:73)
+	at ?.Then Message "Enter Password" is displayed(login.feature:12)
+
+Then A list of "3" available hotels for "New York" are displayed(| New York | 3 |)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at nl.ing.cucumber.stepDefinitions.SearchSteps.a_list_of_available_hotels_for_are_displayed(SearchSteps.java:81)
+	at ?.Then A list of "3" available hotels for "New York" are displayed(searchhotel.feature:21)
+
+| New York | 3 |  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at nl.ing.cucumber.stepDefinitions.SearchSteps.a_list_of_available_hotels_for_are_displayed(SearchSteps.java:81)
+	at ?.Then A list of "3" available hotels for "New York" are displayed(searchhotel.feature:21)
+
