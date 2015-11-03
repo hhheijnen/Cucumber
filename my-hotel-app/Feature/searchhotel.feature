@@ -23,7 +23,7 @@ Scenario Outline:
 	Examples:
 		| location	| number	|
 		| Sydney	| 4 		|
-		| New York	| 3 		|
+		| New York	| 4 		|
 		| London	| 4 		|
 		| Paris		| 4 		|
 		
@@ -44,7 +44,6 @@ Scenario Outline:
 		| Sydney	| Hotel Cornice	| Standard	| 2			| 1		| 100	| 200	|
 		| Sydney	| Hotel Cornice	| Standard	| 1			| 2		| 100	| 200	|
 		| Sydney	| Hotel Cornice	| Standard	| 2			| 2		| 100	| 400	|
-
 
 @Sanity
 Scenario: Successful LogOut
