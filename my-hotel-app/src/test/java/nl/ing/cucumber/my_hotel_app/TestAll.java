@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 				features = 	"Feature",
 				glue = 		"nl.ing.cucumber.stepDefinitions",
 				tags = 		{"@All"},
-				plugin = 	{ "pretty",
+				plugin = 	{ "progress",
 							"html:target/html-report-all"
 	        				}
 				)
