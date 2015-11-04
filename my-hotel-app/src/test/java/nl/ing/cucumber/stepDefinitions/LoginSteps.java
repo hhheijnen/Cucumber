@@ -63,7 +63,8 @@ public class LoginSteps {
 
 	@Then("^Message \"([^\"]*)\" is displayed$")
 	public void message_is_displayed(String errorText) throws Throwable {
-		Assert.assertTrue(errorText.equals(MyWebDriver.driver.findElement(By.className("login_error")).getText()));
+		//Assert.assertTrue(errorText.equals(MyWebDriver.driver.findElement(By.className("login_error")).getText()));
+		MyWebDriver.driver.getPageSource().contains(errorText);
 		System.out.println("Username or password is missing");
 	}
 
