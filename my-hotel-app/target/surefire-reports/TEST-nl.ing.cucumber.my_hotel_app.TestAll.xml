@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="113" failures="4" name="nl.ing.cucumber.my_hotel_app.TestAll" time="0.088" errors="0" skipped="0">
+<testsuite tests="113" failures="0" name="nl.ing.cucumber.my_hotel_app.TestAll" time="0.021" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_60\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Data\Eclipse\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5847857925089667785.tmp"/>
+    <property name="classworlds.conf" value="C:\Data\Eclipse\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5226189296339610701.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_60\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files (x86)\Enterprise Vault\EVClient\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft Application Virtualization Client;C:\Program Files\Gemalto\Classic Client\BIN;C:\Program Files (x86)\Gemalto\Classic Client\BIN;C:\Progs\apache-maven-3.1.1\bin;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\scala\bin;C:\Program Files (x86)\HP\Virtual User Generator\strawberry-perl\perl\bin;C:\Progs\Git\bin;C:\Program Files (x86)\NetManage\RUMBA\System;C:\Program Files (x86)\NetManage\RUMBA\;C:\Program Files (x86)\HP\Unified Functional Testing\bin;C:\Progs\Git\bin;C:\Program Files (x86)\HP\Unified Functional Testing\\bin64;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,97 +61,65 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Scenario: Starting application" name="Given User opens the hotelapp" time="0.02"/>
-  <testcase classname="Scenario: Starting application" name="Scenario: Starting application" time="0.021"/>
+  <testcase classname="Scenario: Starting application" name="Given User opens the hotelapp" time="0.002"/>
+  <testcase classname="Scenario: Starting application" name="Scenario: Starting application" time="0.002"/>
   <testcase classname="| atostestuser |  | Enter Password |" name="When User enters &quot;atostestuser&quot; in username field" time="0"/>
   <testcase classname="| atostestuser |  | Enter Password |" name="And User enters &quot;&quot; in password field" time="0"/>
   <testcase classname="| atostestuser |  | Enter Password |" name="And User clicks loginbutton" time="0"/>
-  <testcase classname="| atostestuser |  | Enter Password |" name="Then Message &quot;Enter Password&quot; is displayed" time="0.008">
-    <failure type="java.lang.AssertionError">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at nl.ing.cucumber.stepDefinitions.LoginSteps.message_is_displayed(LoginSteps.java:73)
-	at ✽.Then Message &quot;Enter Password&quot; is displayed(login.feature:12)
-</failure>
-  </testcase>
-  <testcase classname="| atostestuser |  | Enter Password |" name="| atostestuser |  | Enter Password |" time="0.008">
-    <failure type="java.lang.AssertionError">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at nl.ing.cucumber.stepDefinitions.LoginSteps.message_is_displayed(LoginSteps.java:73)
-	at ✽.Then Message &quot;Enter Password&quot; is displayed(login.feature:12)
-</failure>
-  </testcase>
+  <testcase classname="| atostestuser |  | Enter Password |" name="Then Message &quot;Enter Password&quot; is displayed" time="0"/>
+  <testcase classname="| atostestuser |  | Enter Password |" name="| atostestuser |  | Enter Password |" time="0.001"/>
   <testcase classname="|  | testuser | Enter Username |" name="When User enters &quot;&quot; in username field" time="0"/>
   <testcase classname="|  | testuser | Enter Username |" name="And User enters &quot;testuser&quot; in password field" time="0"/>
   <testcase classname="|  | testuser | Enter Username |" name="And User clicks loginbutton" time="0"/>
   <testcase classname="|  | testuser | Enter Username |" name="Then Message &quot;Enter Username&quot; is displayed" time="0"/>
   <testcase classname="|  | testuser | Enter Username |" name="|  | testuser | Enter Username |" time="0"/>
-  <testcase classname="|  |  | Enter Username |" name="When User enters &quot;&quot; in username field" time="0.001"/>
+  <testcase classname="|  |  | Enter Username |" name="When User enters &quot;&quot; in username field" time="0"/>
   <testcase classname="|  |  | Enter Username |" name="And User enters &quot;&quot; in password field" time="0"/>
   <testcase classname="|  |  | Enter Username |" name="And User clicks loginbutton" time="0"/>
   <testcase classname="|  |  | Enter Username |" name="Then Message &quot;Enter Username&quot; is displayed" time="0"/>
-  <testcase classname="|  |  | Enter Username |" name="|  |  | Enter Username |" time="0.001"/>
+  <testcase classname="|  |  | Enter Username |" name="|  |  | Enter Username |" time="0"/>
   <testcase classname="| wrong | testuser |" name="When User enters &quot;wrong&quot; in username field" time="0"/>
   <testcase classname="| wrong | testuser |" name="And User enters &quot;testuser&quot; in password field" time="0"/>
   <testcase classname="| wrong | testuser |" name="And User clicks loginbutton" time="0"/>
   <testcase classname="| wrong | testuser |" name="Then Invalid login is displayed" time="0"/>
-  <testcase classname="| wrong | testuser |" name="| wrong | testuser |" time="0.015"/>
+  <testcase classname="| wrong | testuser |" name="| wrong | testuser |" time="0.008"/>
   <testcase classname="| atostestuser | wrong |" name="When User enters &quot;atostestuser&quot; in username field" time="0"/>
-  <testcase classname="| atostestuser | wrong |" name="And User enters &quot;wrong&quot; in password field" time="0.001"/>
+  <testcase classname="| atostestuser | wrong |" name="And User enters &quot;wrong&quot; in password field" time="0"/>
   <testcase classname="| atostestuser | wrong |" name="And User clicks loginbutton" time="0"/>
   <testcase classname="| atostestuser | wrong |" name="Then Invalid login is displayed" time="0"/>
-  <testcase classname="| atostestuser | wrong |" name="| atostestuser | wrong |" time="0"/>
+  <testcase classname="| atostestuser | wrong |" name="| atostestuser | wrong |" time="0.001"/>
   <testcase classname="| wrong | wrong |" name="When User enters &quot;wrong&quot; in username field" time="0"/>
   <testcase classname="| wrong | wrong |" name="And User enters &quot;wrong&quot; in password field" time="0"/>
   <testcase classname="| wrong | wrong |" name="And User clicks loginbutton" time="0"/>
-  <testcase classname="| wrong | wrong |" name="Then Invalid login is displayed" time="0.003"/>
-  <testcase classname="| wrong | wrong |" name="| wrong | wrong |" time="0.003"/>
+  <testcase classname="| wrong | wrong |" name="Then Invalid login is displayed" time="0"/>
+  <testcase classname="| wrong | wrong |" name="| wrong | wrong |" time="0.001"/>
   <testcase classname="Scenario: Login with valid credentials" name="When User enters &quot;atostestuser&quot; in username field" time="0"/>
-  <testcase classname="Scenario: Login with valid credentials" name="And User enters &quot;testuser&quot; in password field" time="0"/>
+  <testcase classname="Scenario: Login with valid credentials" name="And User enters &quot;testuser&quot; in password field" time="0.001"/>
   <testcase classname="Scenario: Login with valid credentials" name="And User clicks loginbutton" time="0"/>
   <testcase classname="Scenario: Login with valid credentials" name="Then Welcome text for user &quot;atostestuser&quot; is displayed" time="0"/>
   <testcase classname="Scenario: Login with valid credentials" name="Scenario: Login with valid credentials" time="0"/>
   <testcase classname="Scenario: Successful LogOut" name="When User logouts from the application" time="0"/>
   <testcase classname="Scenario: Successful LogOut" name="Then Logout successfully is displayed" time="0"/>
   <testcase classname="Scenario: Successful LogOut" name="And User closes the hotelapp" time="0"/>
-  <testcase classname="Scenario: Successful LogOut" name="Scenario: Successful LogOut" time="0"/>
-  <testcase classname="Scenario: Starting application and successfull login" name="Given User opens the hotelapp" time="0.001"/>
+  <testcase classname="Scenario: Successful LogOut" name="Scenario: Successful LogOut" time="0.001"/>
+  <testcase classname="Scenario: Starting application and successfull login" name="Given User opens the hotelapp" time="0"/>
   <testcase classname="Scenario: Starting application and successfull login" name="When User enters &quot;atostestuser&quot; in username field" time="0"/>
   <testcase classname="Scenario: Starting application and successfull login" name="And User enters &quot;testuser&quot; in password field" time="0"/>
   <testcase classname="Scenario: Starting application and successfull login" name="And User clicks loginbutton" time="0"/>
   <testcase classname="Scenario: Starting application and successfull login" name="Then Welcome text for user &quot;atostestuser&quot; is displayed" time="0"/>
   <testcase classname="Scenario: Starting application and successfull login" name="Scenario: Starting application and successfull login" time="0.001"/>
   <testcase classname="Scenario: The hotel application is active" name="Given The hotelapp is active" time="0"/>
-  <testcase classname="Scenario: The hotel application is active" name="Scenario: The hotel application is active" time="0"/>
+  <testcase classname="Scenario: The hotel application is active" name="Scenario: The hotel application is active" time="0.001"/>
   <testcase classname="| Sydney | 4 |" name="Given User navigtes to the search page" time="0"/>
   <testcase classname="| Sydney | 4 |" name="When User selects &quot;Sydney&quot; as location" time="0"/>
   <testcase classname="| Sydney | 4 |" name="And User clicks the search button" time="0"/>
   <testcase classname="| Sydney | 4 |" name="Then A list of &quot;4&quot; available hotels for &quot;Sydney&quot; are displayed" time="0"/>
   <testcase classname="| Sydney | 4 |" name="| Sydney | 4 |" time="0.001"/>
-  <testcase classname="| New York | 3 |" name="Given User navigtes to the search page" time="0"/>
-  <testcase classname="| New York | 3 |" name="When User selects &quot;New York&quot; as location" time="0"/>
-  <testcase classname="| New York | 3 |" name="And User clicks the search button" time="0"/>
-  <testcase classname="| New York | 3 |" name="Then A list of &quot;3&quot; available hotels for &quot;New York&quot; are displayed" time="0">
-    <failure type="java.lang.AssertionError">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at nl.ing.cucumber.stepDefinitions.SearchSteps.a_list_of_available_hotels_for_are_displayed(SearchSteps.java:81)
-	at ✽.Then A list of &quot;3&quot; available hotels for &quot;New York&quot; are displayed(searchhotel.feature:21)
-</failure>
-  </testcase>
-  <testcase classname="| New York | 3 |" name="| New York | 3 |" time="0.001">
-    <failure type="java.lang.AssertionError">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at nl.ing.cucumber.stepDefinitions.SearchSteps.a_list_of_available_hotels_for_are_displayed(SearchSteps.java:81)
-	at ✽.Then A list of &quot;3&quot; available hotels for &quot;New York&quot; are displayed(searchhotel.feature:21)
-</failure>
-  </testcase>
+  <testcase classname="| New York | 4 |" name="Given User navigtes to the search page" time="0"/>
+  <testcase classname="| New York | 4 |" name="When User selects &quot;New York&quot; as location" time="0"/>
+  <testcase classname="| New York | 4 |" name="And User clicks the search button" time="0"/>
+  <testcase classname="| New York | 4 |" name="Then A list of &quot;4&quot; available hotels for &quot;New York&quot; are displayed" time="0"/>
+  <testcase classname="| New York | 4 |" name="| New York | 4 |" time="0"/>
   <testcase classname="| London | 4 |" name="Given User navigtes to the search page" time="0"/>
   <testcase classname="| London | 4 |" name="When User selects &quot;London&quot; as location" time="0"/>
   <testcase classname="| London | 4 |" name="And User clicks the search button" time="0"/>
@@ -161,7 +129,7 @@
   <testcase classname="| Paris | 4 |" name="When User selects &quot;Paris&quot; as location" time="0"/>
   <testcase classname="| Paris | 4 |" name="And User clicks the search button" time="0"/>
   <testcase classname="| Paris | 4 |" name="Then A list of &quot;4&quot; available hotels for &quot;Paris&quot; are displayed" time="0"/>
-  <testcase classname="| Paris | 4 |" name="| Paris | 4 |" time="0.001"/>
+  <testcase classname="| Paris | 4 |" name="| Paris | 4 |" time="0"/>
   <testcase classname="| Sydney | Hotel Cornice | Standard | 1 | 1 | 100 | 100 |" name="Given User navigtes to the search page" time="0"/>
   <testcase classname="| Sydney | Hotel Cornice | Standard | 1 | 1 | 100 | 100 |" name="When User selects &quot;Sydney&quot; as location" time="0"/>
   <testcase classname="| Sydney | Hotel Cornice | Standard | 1 | 1 | 100 | 100 |" name="And User selects &quot;Hotel Cornice&quot; as hotel" time="0"/>
@@ -184,14 +152,14 @@
   <testcase classname="| Sydney | Hotel Cornice | Standard | 2 | 1 | 100 | 200 |" name="| Sydney | Hotel Cornice | Standard | 2 | 1 | 100 | 200 |" time="0"/>
   <testcase classname="| Sydney | Hotel Cornice | Standard | 1 | 2 | 100 | 200 |" name="Given User navigtes to the search page" time="0"/>
   <testcase classname="| Sydney | Hotel Cornice | Standard | 1 | 2 | 100 | 200 |" name="When User selects &quot;Sydney&quot; as location" time="0"/>
-  <testcase classname="| Sydney | Hotel Cornice | Standard | 1 | 2 | 100 | 200 |" name="And User selects &quot;Hotel Cornice&quot; as hotel" time="0.001"/>
+  <testcase classname="| Sydney | Hotel Cornice | Standard | 1 | 2 | 100 | 200 |" name="And User selects &quot;Hotel Cornice&quot; as hotel" time="0"/>
   <testcase classname="| Sydney | Hotel Cornice | Standard | 1 | 2 | 100 | 200 |" name="And User select &quot;Standard&quot; as roomtype" time="0"/>
   <testcase classname="| Sydney | Hotel Cornice | Standard | 1 | 2 | 100 | 200 |" name="And User selects 1 rooms" time="0"/>
   <testcase classname="| Sydney | Hotel Cornice | Standard | 1 | 2 | 100 | 200 |" name="And User selects 2 days" time="0"/>
   <testcase classname="| Sydney | Hotel Cornice | Standard | 1 | 2 | 100 | 200 |" name="And User clicks the search button" time="0"/>
   <testcase classname="| Sydney | Hotel Cornice | Standard | 1 | 2 | 100 | 200 |" name="Then The price per night is &quot;100&quot;" time="0"/>
   <testcase classname="| Sydney | Hotel Cornice | Standard | 1 | 2 | 100 | 200 |" name="And The total price is &quot;200&quot;" time="0"/>
-  <testcase classname="| Sydney | Hotel Cornice | Standard | 1 | 2 | 100 | 200 |" name="| Sydney | Hotel Cornice | Standard | 1 | 2 | 100 | 200 |" time="0"/>
+  <testcase classname="| Sydney | Hotel Cornice | Standard | 1 | 2 | 100 | 200 |" name="| Sydney | Hotel Cornice | Standard | 1 | 2 | 100 | 200 |" time="0.001"/>
   <testcase classname="| Sydney | Hotel Cornice | Standard | 2 | 2 | 100 | 400 |" name="Given User navigtes to the search page" time="0"/>
   <testcase classname="| Sydney | Hotel Cornice | Standard | 2 | 2 | 100 | 400 |" name="When User selects &quot;Sydney&quot; as location" time="0"/>
   <testcase classname="| Sydney | Hotel Cornice | Standard | 2 | 2 | 100 | 400 |" name="And User selects &quot;Hotel Cornice&quot; as hotel" time="0"/>
@@ -201,7 +169,7 @@
   <testcase classname="| Sydney | Hotel Cornice | Standard | 2 | 2 | 100 | 400 |" name="And User clicks the search button" time="0"/>
   <testcase classname="| Sydney | Hotel Cornice | Standard | 2 | 2 | 100 | 400 |" name="Then The price per night is &quot;100&quot;" time="0"/>
   <testcase classname="| Sydney | Hotel Cornice | Standard | 2 | 2 | 100 | 400 |" name="And The total price is &quot;400&quot;" time="0"/>
-  <testcase classname="| Sydney | Hotel Cornice | Standard | 2 | 2 | 100 | 400 |" name="| Sydney | Hotel Cornice | Standard | 2 | 2 | 100 | 400 |" time="0.001"/>
+  <testcase classname="| Sydney | Hotel Cornice | Standard | 2 | 2 | 100 | 400 |" name="| Sydney | Hotel Cornice | Standard | 2 | 2 | 100 | 400 |" time="0"/>
   <testcase classname="Scenario: Successful LogOut" name="When User logouts from the application" time="0"/>
   <testcase classname="Scenario: Successful LogOut" name="Then Logout successfully is displayed" time="0"/>
   <testcase classname="Scenario: Successful LogOut" name="And User closes the hotelapp" time="0"/>

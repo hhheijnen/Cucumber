@@ -2,6 +2,7 @@ package nl.ing.cucumber.my_hotel_app;
 
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 //import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -54,4 +55,12 @@ public class MyWebDriver {
 		System.out.println("Link '" + link + "' is clicked");
 	}
 
+	public static void assertElement(String id, String expected) {
+		String actual = MyWebDriver.driver.findElement(By.id(id)).getAttribute("value").toString();
+		Assert.assertTrue(expected.equals(actual));
+		System.out.println("EXPECTED: Price per night is " + expected);
+		System.out.println("ACTUAL: Price per night is " + actual);
+
+	}
+	
 }

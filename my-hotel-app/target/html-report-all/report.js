@@ -1,19 +1,19 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("login.feature");
 formatter.feature({
-  "line": 2,
+  "line": 4,
   "name": "Login the hotel application",
   "description": "",
   "id": "login-the-hotel-application",
   "keyword": "Feature",
   "tags": [
     {
-      "line": 1,
+      "line": 3,
       "name": "@All"
     }
   ]
 });
 formatter.scenario({
-  "line": 5,
+  "line": 7,
   "name": "Starting application",
   "description": "",
   "id": "login-the-hotel-application;starting-application",
@@ -21,13 +21,13 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 4,
+      "line": 6,
       "name": "@Sanity"
     }
   ]
 });
 formatter.step({
-  "line": 6,
+  "line": 8,
   "name": "User opens the hotelapp",
   "keyword": "Given "
 });
@@ -35,11 +35,11 @@ formatter.match({
   "location": "LoginSteps.user_opens_the_hotelapp()"
 });
 formatter.result({
-  "duration": 12640907982,
+  "duration": 8676580272,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 8,
+  "line": 10,
   "name": "Login with missing credentials",
   "description": "",
   "id": "login-the-hotel-application;login-with-missing-credentials",
@@ -47,27 +47,27 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 9,
+  "line": 11,
   "name": "User enters \"\u003cusername\u003e\" in username field",
   "keyword": "When "
 });
 formatter.step({
-  "line": 10,
+  "line": 12,
   "name": "User enters \"\u003cpassword\u003e\" in password field",
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 13,
   "name": "User clicks loginbutton",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 14,
   "name": "Message \"\u003cerrorText\u003e\" is displayed",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 14,
+  "line": 16,
   "name": "",
   "description": "",
   "id": "login-the-hotel-application;login-with-missing-credentials;",
@@ -78,7 +78,7 @@ formatter.examples({
         "password",
         "errorText"
       ],
-      "line": 15,
+      "line": 17,
       "id": "login-the-hotel-application;login-with-missing-credentials;;1"
     },
     {
@@ -87,7 +87,7 @@ formatter.examples({
         "",
         "Enter Password"
       ],
-      "line": 16,
+      "line": 18,
       "id": "login-the-hotel-application;login-with-missing-credentials;;2"
     },
     {
@@ -96,7 +96,7 @@ formatter.examples({
         "testuser",
         "Enter Username"
       ],
-      "line": 17,
+      "line": 19,
       "id": "login-the-hotel-application;login-with-missing-credentials;;3"
     },
     {
@@ -105,14 +105,14 @@ formatter.examples({
         "",
         "Enter Username"
       ],
-      "line": 18,
+      "line": 20,
       "id": "login-the-hotel-application;login-with-missing-credentials;;4"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 16,
+  "line": 18,
   "name": "Login with missing credentials",
   "description": "",
   "id": "login-the-hotel-application;login-with-missing-credentials;;2",
@@ -120,13 +120,13 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 1,
+      "line": 3,
       "name": "@All"
     }
   ]
 });
 formatter.step({
-  "line": 9,
+  "line": 11,
   "name": "User enters \"atostestuser\" in username field",
   "matchedColumns": [
     0
@@ -134,7 +134,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 10,
+  "line": 12,
   "name": "User enters \"\" in password field",
   "matchedColumns": [
     1
@@ -142,12 +142,12 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 13,
   "name": "User clicks loginbutton",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 14,
   "name": "Message \"Enter Password\" is displayed",
   "matchedColumns": [
     2
@@ -164,7 +164,7 @@ formatter.match({
   "location": "LoginSteps.user_enters_username(String)"
 });
 formatter.result({
-  "duration": 200147974,
+  "duration": 277513725,
   "status": "passed"
 });
 formatter.match({
@@ -177,14 +177,14 @@ formatter.match({
   "location": "LoginSteps.user_enters_password(String)"
 });
 formatter.result({
-  "duration": 96854114,
+  "duration": 296414832,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_loginbutton()"
 });
 formatter.result({
-  "duration": 347631136,
+  "duration": 136479680,
   "status": "passed"
 });
 formatter.match({
@@ -197,12 +197,11 @@ formatter.match({
   "location": "LoginSteps.message_is_displayed(String)"
 });
 formatter.result({
-  "duration": 61373709,
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat nl.ing.cucumber.stepDefinitions.LoginSteps.message_is_displayed(LoginSteps.java:66)\r\n\tat ✽.Then Message \"Enter Password\" is displayed(login.feature:12)\r\n",
-  "status": "failed"
+  "duration": 27973692,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 17,
+  "line": 19,
   "name": "Login with missing credentials",
   "description": "",
   "id": "login-the-hotel-application;login-with-missing-credentials;;3",
@@ -210,13 +209,13 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 1,
+      "line": 3,
       "name": "@All"
     }
   ]
 });
 formatter.step({
-  "line": 9,
+  "line": 11,
   "name": "User enters \"\" in username field",
   "matchedColumns": [
     0
@@ -224,7 +223,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 10,
+  "line": 12,
   "name": "User enters \"testuser\" in password field",
   "matchedColumns": [
     1
@@ -232,12 +231,12 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 13,
   "name": "User clicks loginbutton",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 14,
   "name": "Message \"Enter Username\" is displayed",
   "matchedColumns": [
     2
@@ -254,7 +253,7 @@ formatter.match({
   "location": "LoginSteps.user_enters_username(String)"
 });
 formatter.result({
-  "duration": 118813776,
+  "duration": 121114164,
   "status": "passed"
 });
 formatter.match({
@@ -267,14 +266,14 @@ formatter.match({
   "location": "LoginSteps.user_enters_password(String)"
 });
 formatter.result({
-  "duration": 165173162,
+  "duration": 176693396,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_loginbutton()"
 });
 formatter.result({
-  "duration": 127647621,
+  "duration": 162547017,
   "status": "passed"
 });
 formatter.match({
@@ -287,11 +286,11 @@ formatter.match({
   "location": "LoginSteps.message_is_displayed(String)"
 });
 formatter.result({
-  "duration": 38827682,
+  "duration": 29028165,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 18,
+  "line": 20,
   "name": "Login with missing credentials",
   "description": "",
   "id": "login-the-hotel-application;login-with-missing-credentials;;4",
@@ -299,13 +298,13 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 1,
+      "line": 3,
       "name": "@All"
     }
   ]
 });
 formatter.step({
-  "line": 9,
+  "line": 11,
   "name": "User enters \"\" in username field",
   "matchedColumns": [
     0
@@ -313,7 +312,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 10,
+  "line": 12,
   "name": "User enters \"\" in password field",
   "matchedColumns": [
     1
@@ -321,12 +320,12 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 13,
   "name": "User clicks loginbutton",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 14,
   "name": "Message \"Enter Username\" is displayed",
   "matchedColumns": [
     2
@@ -343,7 +342,7 @@ formatter.match({
   "location": "LoginSteps.user_enters_username(String)"
 });
 formatter.result({
-  "duration": 124634135,
+  "duration": 109916566,
   "status": "passed"
 });
 formatter.match({
@@ -356,14 +355,14 @@ formatter.match({
   "location": "LoginSteps.user_enters_password(String)"
 });
 formatter.result({
-  "duration": 101156798,
+  "duration": 109923706,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_loginbutton()"
 });
 formatter.result({
-  "duration": 110057132,
+  "duration": 111807301,
   "status": "passed"
 });
 formatter.match({
@@ -376,11 +375,11 @@ formatter.match({
   "location": "LoginSteps.message_is_displayed(String)"
 });
 formatter.result({
-  "duration": 35230956,
+  "duration": 28588615,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 20,
+  "line": 22,
   "name": "Login with invalid credentials",
   "description": "",
   "id": "login-the-hotel-application;login-with-invalid-credentials",
@@ -388,27 +387,27 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 21,
+  "line": 23,
   "name": "User enters \"\u003cusername\u003e\" in username field",
   "keyword": "When "
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "User enters \"\u003cpassword\u003e\" in password field",
   "keyword": "And "
 });
 formatter.step({
-  "line": 23,
+  "line": 25,
   "name": "User clicks loginbutton",
   "keyword": "And "
 });
 formatter.step({
-  "line": 24,
+  "line": 26,
   "name": "Invalid login is displayed",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 26,
+  "line": 28,
   "name": "",
   "description": "",
   "id": "login-the-hotel-application;login-with-invalid-credentials;",
@@ -418,7 +417,7 @@ formatter.examples({
         "username",
         "password"
       ],
-      "line": 27,
+      "line": 29,
       "id": "login-the-hotel-application;login-with-invalid-credentials;;1"
     },
     {
@@ -426,7 +425,7 @@ formatter.examples({
         "wrong",
         "testuser"
       ],
-      "line": 28,
+      "line": 30,
       "id": "login-the-hotel-application;login-with-invalid-credentials;;2"
     },
     {
@@ -434,7 +433,7 @@ formatter.examples({
         "atostestuser",
         "wrong"
       ],
-      "line": 29,
+      "line": 31,
       "id": "login-the-hotel-application;login-with-invalid-credentials;;3"
     },
     {
@@ -442,14 +441,14 @@ formatter.examples({
         "wrong",
         "wrong"
       ],
-      "line": 30,
+      "line": 32,
       "id": "login-the-hotel-application;login-with-invalid-credentials;;4"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 28,
+  "line": 30,
   "name": "Login with invalid credentials",
   "description": "",
   "id": "login-the-hotel-application;login-with-invalid-credentials;;2",
@@ -457,13 +456,13 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 1,
+      "line": 3,
       "name": "@All"
     }
   ]
 });
 formatter.step({
-  "line": 21,
+  "line": 23,
   "name": "User enters \"wrong\" in username field",
   "matchedColumns": [
     0
@@ -471,7 +470,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "User enters \"testuser\" in password field",
   "matchedColumns": [
     1
@@ -479,12 +478,12 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 23,
+  "line": 25,
   "name": "User clicks loginbutton",
   "keyword": "And "
 });
 formatter.step({
-  "line": 24,
+  "line": 26,
   "name": "Invalid login is displayed",
   "keyword": "Then "
 });
@@ -498,7 +497,7 @@ formatter.match({
   "location": "LoginSteps.user_enters_username(String)"
 });
 formatter.result({
-  "duration": 119570606,
+  "duration": 124525252,
   "status": "passed"
 });
 formatter.match({
@@ -511,25 +510,25 @@ formatter.match({
   "location": "LoginSteps.user_enters_password(String)"
 });
 formatter.result({
-  "duration": 108692519,
+  "duration": 122991512,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_loginbutton()"
 });
 formatter.result({
-  "duration": 930703678,
+  "duration": 631277592,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.invalid_login_is_displayed()"
 });
 formatter.result({
-  "duration": 22243473,
+  "duration": 32596778,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 29,
+  "line": 31,
   "name": "Login with invalid credentials",
   "description": "",
   "id": "login-the-hotel-application;login-with-invalid-credentials;;3",
@@ -537,13 +536,13 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 1,
+      "line": 3,
       "name": "@All"
     }
   ]
 });
 formatter.step({
-  "line": 21,
+  "line": 23,
   "name": "User enters \"atostestuser\" in username field",
   "matchedColumns": [
     0
@@ -551,7 +550,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "User enters \"wrong\" in password field",
   "matchedColumns": [
     1
@@ -559,12 +558,12 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 23,
+  "line": 25,
   "name": "User clicks loginbutton",
   "keyword": "And "
 });
 formatter.step({
-  "line": 24,
+  "line": 26,
   "name": "Invalid login is displayed",
   "keyword": "Then "
 });
@@ -578,7 +577,7 @@ formatter.match({
   "location": "LoginSteps.user_enters_username(String)"
 });
 formatter.result({
-  "duration": 147936992,
+  "duration": 152674763,
   "status": "passed"
 });
 formatter.match({
@@ -591,25 +590,25 @@ formatter.match({
   "location": "LoginSteps.user_enters_password(String)"
 });
 formatter.result({
-  "duration": 103729394,
+  "duration": 123401164,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_loginbutton()"
 });
 formatter.result({
-  "duration": 642028053,
+  "duration": 558893261,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.invalid_login_is_displayed()"
 });
 formatter.result({
-  "duration": 25697401,
+  "duration": 30676591,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 30,
+  "line": 32,
   "name": "Login with invalid credentials",
   "description": "",
   "id": "login-the-hotel-application;login-with-invalid-credentials;;4",
@@ -617,13 +616,13 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 1,
+      "line": 3,
       "name": "@All"
     }
   ]
 });
 formatter.step({
-  "line": 21,
+  "line": 23,
   "name": "User enters \"wrong\" in username field",
   "matchedColumns": [
     0
@@ -631,7 +630,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "User enters \"wrong\" in password field",
   "matchedColumns": [
     1
@@ -639,12 +638,12 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 23,
+  "line": 25,
   "name": "User clicks loginbutton",
   "keyword": "And "
 });
 formatter.step({
-  "line": 24,
+  "line": 26,
   "name": "Invalid login is displayed",
   "keyword": "Then "
 });
@@ -658,7 +657,7 @@ formatter.match({
   "location": "LoginSteps.user_enters_username(String)"
 });
 formatter.result({
-  "duration": 134637139,
+  "duration": 157404949,
   "status": "passed"
 });
 formatter.match({
@@ -671,25 +670,25 @@ formatter.match({
   "location": "LoginSteps.user_enters_password(String)"
 });
 formatter.result({
-  "duration": 106061911,
+  "duration": 126106741,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_loginbutton()"
 });
 formatter.result({
-  "duration": 1136493067,
+  "duration": 587980778,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.invalid_login_is_displayed()"
 });
 formatter.result({
-  "duration": 27957180,
+  "duration": 36056061,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 33,
+  "line": 35,
   "name": "Login with valid credentials",
   "description": "",
   "id": "login-the-hotel-application;login-with-valid-credentials",
@@ -697,28 +696,28 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 32,
+      "line": 34,
       "name": "@Sanity"
     }
   ]
 });
 formatter.step({
-  "line": 34,
+  "line": 36,
   "name": "User enters \"atostestuser\" in username field",
   "keyword": "When "
 });
 formatter.step({
-  "line": 35,
+  "line": 37,
   "name": "User enters \"testuser\" in password field",
   "keyword": "And "
 });
 formatter.step({
-  "line": 36,
+  "line": 38,
   "name": "User clicks loginbutton",
   "keyword": "And "
 });
 formatter.step({
-  "line": 37,
+  "line": 39,
   "name": "Welcome text for user \"atostestuser\" is displayed",
   "keyword": "Then "
 });
@@ -732,7 +731,7 @@ formatter.match({
   "location": "LoginSteps.user_enters_username(String)"
 });
 formatter.result({
-  "duration": 171956070,
+  "duration": 200494260,
   "status": "passed"
 });
 formatter.match({
@@ -745,14 +744,14 @@ formatter.match({
   "location": "LoginSteps.user_enters_password(String)"
 });
 formatter.result({
-  "duration": 114645859,
+  "duration": 136810346,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_loginbutton()"
 });
 formatter.result({
-  "duration": 884926640,
+  "duration": 1916459573,
   "status": "passed"
 });
 formatter.match({
@@ -765,11 +764,11 @@ formatter.match({
   "location": "LoginSteps.message_displayed_login_successfully(String)"
 });
 formatter.result({
-  "duration": 27614911,
+  "duration": 31626643,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 40,
+  "line": 42,
   "name": "Successful LogOut",
   "description": "",
   "id": "login-the-hotel-application;successful-logout",
@@ -777,23 +776,23 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 39,
+      "line": 41,
       "name": "@Sanity"
     }
   ]
 });
 formatter.step({
-  "line": 41,
+  "line": 43,
   "name": "User logouts from the application",
   "keyword": "When "
 });
 formatter.step({
-  "line": 42,
+  "line": 44,
   "name": "Logout successfully is displayed",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 43,
+  "line": 45,
   "name": "User closes the hotelapp",
   "keyword": "And "
 });
@@ -801,21 +800,21 @@ formatter.match({
   "location": "LoginSteps.user_Logout_from_the_application()"
 });
 formatter.result({
-  "duration": 477281947,
+  "duration": 159607609,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.message_displayed_logout_successfully()"
 });
 formatter.result({
-  "duration": 51416668,
+  "duration": 413799735,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_closes_the_hotelapp()"
 });
 formatter.result({
-  "duration": 487989568,
+  "duration": 615460477,
   "status": "passed"
 });
 formatter.uri("searchhotel.feature");
@@ -875,7 +874,7 @@ formatter.match({
   "location": "LoginSteps.user_opens_the_hotelapp()"
 });
 formatter.result({
-  "duration": 6917169993,
+  "duration": 12327667969,
   "status": "passed"
 });
 formatter.match({
@@ -888,7 +887,7 @@ formatter.match({
   "location": "LoginSteps.user_enters_username(String)"
 });
 formatter.result({
-  "duration": 212962761,
+  "duration": 248028160,
   "status": "passed"
 });
 formatter.match({
@@ -901,14 +900,14 @@ formatter.match({
   "location": "LoginSteps.user_enters_password(String)"
 });
 formatter.result({
-  "duration": 110781387,
+  "duration": 292908694,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_loginbutton()"
 });
 formatter.result({
-  "duration": 1296901684,
+  "duration": 1532314975,
   "status": "passed"
 });
 formatter.match({
@@ -921,7 +920,7 @@ formatter.match({
   "location": "LoginSteps.message_displayed_login_successfully(String)"
 });
 formatter.result({
-  "duration": 28890723,
+  "duration": 36081943,
   "status": "passed"
 });
 formatter.scenario({
@@ -947,7 +946,7 @@ formatter.match({
   "location": "LoginSteps.the_hotelapp_is_active()"
 });
 formatter.result({
-  "duration": 21237193,
+  "duration": 23892791,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1082,7 +1081,7 @@ formatter.match({
   "location": "SearchSteps.user_navigtes_to_the_search_page()"
 });
 formatter.result({
-  "duration": 446534849,
+  "duration": 124740342,
   "status": "passed"
 });
 formatter.match({
@@ -1095,14 +1094,14 @@ formatter.match({
   "location": "SearchSteps.user_selects_as_location(String)"
 });
 formatter.result({
-  "duration": 94606384,
+  "duration": 528646404,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchSteps.user_clicks_the_search_button()"
 });
 formatter.result({
-  "duration": 793661284,
+  "duration": 1126291486,
   "status": "passed"
 });
 formatter.match({
@@ -1119,7 +1118,7 @@ formatter.match({
   "location": "SearchSteps.a_list_of_available_hotels_for_are_displayed(String,String)"
 });
 formatter.result({
-  "duration": 23102493,
+  "duration": 27805012,
   "status": "passed"
 });
 formatter.scenario({
@@ -1171,7 +1170,7 @@ formatter.match({
   "location": "SearchSteps.user_navigtes_to_the_search_page()"
 });
 formatter.result({
-  "duration": 2027022300,
+  "duration": 143649035,
   "status": "passed"
 });
 formatter.match({
@@ -1184,14 +1183,14 @@ formatter.match({
   "location": "SearchSteps.user_selects_as_location(String)"
 });
 formatter.result({
-  "duration": 121853590,
+  "duration": 557272058,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchSteps.user_clicks_the_search_button()"
 });
 formatter.result({
-  "duration": 843811512,
+  "duration": 864236987,
   "status": "passed"
 });
 formatter.match({
@@ -1208,7 +1207,7 @@ formatter.match({
   "location": "SearchSteps.a_list_of_available_hotels_for_are_displayed(String,String)"
 });
 formatter.result({
-  "duration": 27323068,
+  "duration": 40464058,
   "status": "passed"
 });
 formatter.scenario({
@@ -1260,7 +1259,7 @@ formatter.match({
   "location": "SearchSteps.user_navigtes_to_the_search_page()"
 });
 formatter.result({
-  "duration": 690242029,
+  "duration": 142391965,
   "status": "passed"
 });
 formatter.match({
@@ -1273,14 +1272,14 @@ formatter.match({
   "location": "SearchSteps.user_selects_as_location(String)"
 });
 formatter.result({
-  "duration": 114793120,
+  "duration": 551379406,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchSteps.user_clicks_the_search_button()"
 });
 formatter.result({
-  "duration": 850338722,
+  "duration": 805554130,
   "status": "passed"
 });
 formatter.match({
@@ -1297,7 +1296,7 @@ formatter.match({
   "location": "SearchSteps.a_list_of_available_hotels_for_are_displayed(String,String)"
 });
 formatter.result({
-  "duration": 24805806,
+  "duration": 37857101,
   "status": "passed"
 });
 formatter.scenario({
@@ -1349,7 +1348,7 @@ formatter.match({
   "location": "SearchSteps.user_navigtes_to_the_search_page()"
 });
 formatter.result({
-  "duration": 449059697,
+  "duration": 149607283,
   "status": "passed"
 });
 formatter.match({
@@ -1362,14 +1361,14 @@ formatter.match({
   "location": "SearchSteps.user_selects_as_location(String)"
 });
 formatter.result({
-  "duration": 97058494,
+  "duration": 533814354,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchSteps.user_clicks_the_search_button()"
 });
 formatter.result({
-  "duration": 740117371,
+  "duration": 812960440,
   "status": "passed"
 });
 formatter.match({
@@ -1386,7 +1385,7 @@ formatter.match({
   "location": "SearchSteps.a_list_of_available_hotels_for_are_displayed(String,String)"
 });
 formatter.result({
-  "duration": 24540291,
+  "duration": 40840241,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1600,7 +1599,7 @@ formatter.match({
   "location": "SearchSteps.user_navigtes_to_the_search_page()"
 });
 formatter.result({
-  "duration": 469391461,
+  "duration": 147949041,
   "status": "passed"
 });
 formatter.match({
@@ -1613,7 +1612,7 @@ formatter.match({
   "location": "SearchSteps.user_selects_as_location(String)"
 });
 formatter.result({
-  "duration": 101978333,
+  "duration": 529951667,
   "status": "passed"
 });
 formatter.match({
@@ -1626,7 +1625,7 @@ formatter.match({
   "location": "SearchSteps.user_selects_as_hotel(String)"
 });
 formatter.result({
-  "duration": 87727088,
+  "duration": 132680359,
   "status": "passed"
 });
 formatter.match({
@@ -1639,7 +1638,7 @@ formatter.match({
   "location": "SearchSteps.user_select_as_roomtype(String)"
 });
 formatter.result({
-  "duration": 90348771,
+  "duration": 118593778,
   "status": "passed"
 });
 formatter.match({
@@ -1652,7 +1651,7 @@ formatter.match({
   "location": "SearchSteps.user_selects_rooms(int)"
 });
 formatter.result({
-  "duration": 86787298,
+  "duration": 94822366,
   "status": "passed"
 });
 formatter.match({
@@ -1665,14 +1664,14 @@ formatter.match({
   "location": "SearchSteps.user_selects_days(int)"
 });
 formatter.result({
-  "duration": 293653029,
+  "duration": 336706193,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchSteps.user_clicks_the_search_button()"
 });
 formatter.result({
-  "duration": 677345134,
+  "duration": 831327838,
   "status": "passed"
 });
 formatter.match({
@@ -1685,7 +1684,7 @@ formatter.match({
   "location": "SearchSteps.the_price_per_night_is(String)"
 });
 formatter.result({
-  "duration": 49526379,
+  "duration": 75759273,
   "status": "passed"
 });
 formatter.match({
@@ -1698,7 +1697,7 @@ formatter.match({
   "location": "SearchSteps.the_total_price_is(String)"
 });
 formatter.result({
-  "duration": 33976118,
+  "duration": 47199218,
   "status": "passed"
 });
 formatter.scenario({
@@ -1785,7 +1784,7 @@ formatter.match({
   "location": "SearchSteps.user_navigtes_to_the_search_page()"
 });
 formatter.result({
-  "duration": 520602858,
+  "duration": 145657578,
   "status": "passed"
 });
 formatter.match({
@@ -1798,7 +1797,7 @@ formatter.match({
   "location": "SearchSteps.user_selects_as_location(String)"
 });
 formatter.result({
-  "duration": 117086812,
+  "duration": 547876839,
   "status": "passed"
 });
 formatter.match({
@@ -1811,7 +1810,7 @@ formatter.match({
   "location": "SearchSteps.user_selects_as_hotel(String)"
 });
 formatter.result({
-  "duration": 211817699,
+  "duration": 123542624,
   "status": "passed"
 });
 formatter.match({
@@ -1824,7 +1823,7 @@ formatter.match({
   "location": "SearchSteps.user_select_as_roomtype(String)"
 });
 formatter.result({
-  "duration": 108380148,
+  "duration": 101769045,
   "status": "passed"
 });
 formatter.match({
@@ -1837,7 +1836,7 @@ formatter.match({
   "location": "SearchSteps.user_selects_rooms(int)"
 });
 formatter.result({
-  "duration": 80138264,
+  "duration": 114488781,
   "status": "passed"
 });
 formatter.match({
@@ -1850,14 +1849,14 @@ formatter.match({
   "location": "SearchSteps.user_selects_days(int)"
 });
 formatter.result({
-  "duration": 248612740,
+  "duration": 325800439,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchSteps.user_clicks_the_search_button()"
 });
 formatter.result({
-  "duration": 670547947,
+  "duration": 767342265,
   "status": "passed"
 });
 formatter.match({
@@ -1870,7 +1869,7 @@ formatter.match({
   "location": "SearchSteps.the_price_per_night_is(String)"
 });
 formatter.result({
-  "duration": 47910976,
+  "duration": 56796138,
   "status": "passed"
 });
 formatter.match({
@@ -1883,7 +1882,7 @@ formatter.match({
   "location": "SearchSteps.the_total_price_is(String)"
 });
 formatter.result({
-  "duration": 37993206,
+  "duration": 42539092,
   "status": "passed"
 });
 formatter.scenario({
@@ -1970,7 +1969,7 @@ formatter.match({
   "location": "SearchSteps.user_navigtes_to_the_search_page()"
 });
 formatter.result({
-  "duration": 650269286,
+  "duration": 136440856,
   "status": "passed"
 });
 formatter.match({
@@ -1983,7 +1982,7 @@ formatter.match({
   "location": "SearchSteps.user_selects_as_location(String)"
 });
 formatter.result({
-  "duration": 101671763,
+  "duration": 488537556,
   "status": "passed"
 });
 formatter.match({
@@ -1996,7 +1995,7 @@ formatter.match({
   "location": "SearchSteps.user_selects_as_hotel(String)"
 });
 formatter.result({
-  "duration": 99866707,
+  "duration": 130754371,
   "status": "passed"
 });
 formatter.match({
@@ -2009,7 +2008,7 @@ formatter.match({
   "location": "SearchSteps.user_select_as_roomtype(String)"
 });
 formatter.result({
-  "duration": 82004456,
+  "duration": 106731724,
   "status": "passed"
 });
 formatter.match({
@@ -2022,7 +2021,7 @@ formatter.match({
   "location": "SearchSteps.user_selects_rooms(int)"
 });
 formatter.result({
-  "duration": 82930412,
+  "duration": 114415596,
   "status": "passed"
 });
 formatter.match({
@@ -2035,14 +2034,14 @@ formatter.match({
   "location": "SearchSteps.user_selects_days(int)"
 });
 formatter.result({
-  "duration": 243024873,
+  "duration": 322047973,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchSteps.user_clicks_the_search_button()"
 });
 formatter.result({
-  "duration": 716739546,
+  "duration": 745155464,
   "status": "passed"
 });
 formatter.match({
@@ -2055,7 +2054,7 @@ formatter.match({
   "location": "SearchSteps.the_price_per_night_is(String)"
 });
 formatter.result({
-  "duration": 42678767,
+  "duration": 51726808,
   "status": "passed"
 });
 formatter.match({
@@ -2068,7 +2067,7 @@ formatter.match({
   "location": "SearchSteps.the_total_price_is(String)"
 });
 formatter.result({
-  "duration": 39397536,
+  "duration": 44585566,
   "status": "passed"
 });
 formatter.scenario({
@@ -2155,7 +2154,7 @@ formatter.match({
   "location": "SearchSteps.user_navigtes_to_the_search_page()"
 });
 formatter.result({
-  "duration": 512978781,
+  "duration": 160132392,
   "status": "passed"
 });
 formatter.match({
@@ -2168,7 +2167,7 @@ formatter.match({
   "location": "SearchSteps.user_selects_as_location(String)"
 });
 formatter.result({
-  "duration": 130220663,
+  "duration": 561170444,
   "status": "passed"
 });
 formatter.match({
@@ -2181,7 +2180,7 @@ formatter.match({
   "location": "SearchSteps.user_selects_as_hotel(String)"
 });
 formatter.result({
-  "duration": 98215159,
+  "duration": 147479146,
   "status": "passed"
 });
 formatter.match({
@@ -2194,7 +2193,7 @@ formatter.match({
   "location": "SearchSteps.user_select_as_roomtype(String)"
 });
 formatter.result({
-  "duration": 91121219,
+  "duration": 168068839,
   "status": "passed"
 });
 formatter.match({
@@ -2207,7 +2206,7 @@ formatter.match({
   "location": "SearchSteps.user_selects_rooms(int)"
 });
 formatter.result({
-  "duration": 68170449,
+  "duration": 138722948,
   "status": "passed"
 });
 formatter.match({
@@ -2220,14 +2219,14 @@ formatter.match({
   "location": "SearchSteps.user_selects_days(int)"
 });
 formatter.result({
-  "duration": 269901251,
+  "duration": 392214026,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchSteps.user_clicks_the_search_button()"
 });
 formatter.result({
-  "duration": 1519328832,
+  "duration": 843490216,
   "status": "passed"
 });
 formatter.match({
@@ -2240,7 +2239,7 @@ formatter.match({
   "location": "SearchSteps.the_price_per_night_is(String)"
 });
 formatter.result({
-  "duration": 76389369,
+  "duration": 52256499,
   "status": "passed"
 });
 formatter.match({
@@ -2253,7 +2252,7 @@ formatter.match({
   "location": "SearchSteps.the_total_price_is(String)"
 });
 formatter.result({
-  "duration": 37480472,
+  "duration": 54834896,
   "status": "passed"
 });
 formatter.scenario({
@@ -2289,21 +2288,21 @@ formatter.match({
   "location": "LoginSteps.user_Logout_from_the_application()"
 });
 formatter.result({
-  "duration": 788692804,
+  "duration": 156627592,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.message_displayed_logout_successfully()"
 });
 formatter.result({
-  "duration": 47308100,
+  "duration": 477534966,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_closes_the_hotelapp()"
 });
 formatter.result({
-  "duration": 466214652,
+  "duration": 428474912,
   "status": "passed"
 });
 });

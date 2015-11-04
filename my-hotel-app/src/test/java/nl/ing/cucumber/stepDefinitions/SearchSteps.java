@@ -1,12 +1,7 @@
 package nl.ing.cucumber.stepDefinitions;
 
-import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.List;
 
-import org.apache.commons.lang3.time.DateUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -71,19 +66,14 @@ public class SearchSteps {
 	@Then("^The price per night is \"([^\"]*)\"$")
 	public void the_price_per_night_is(String price) throws Throwable {
 		String expected = "AUD $ " + price;
-		String actual = MyWebDriver.driver.findElement(By.id("price_night_0")).getAttribute("value").toString();
-		Assert.assertTrue(expected.equals(actual));
-		System.out.println("EXPECTED: Price per night is " + expected);
-		System.out.println("ACTUAL: Price per night is " + actual);
+		MyWebDriver.assertElement("price_night_0", expected);
+		
 	}
 
 	@Then("^The total price is \"([^\"]*)\"$")
 	public void the_total_price_is(String price) throws Throwable {
 		String expected = "AUD $ " + price;
-		String actual = MyWebDriver.driver.findElement(By.id("total_price_0")).getAttribute("value").toString();
-		Assert.assertTrue(expected.equals(actual));
-		System.out.println("EXPECTED: Total price is " + expected);
-		System.out.println("ACTUAL: Total price is " + actual);
+		MyWebDriver.assertElement("total_price_0", expected);
 	}
 
 }
