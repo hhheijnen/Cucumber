@@ -1,6 +1,7 @@
 package nl.ing.cucumber.my_hotel_app;
 
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -14,10 +15,12 @@ public class MyWebDriver {
 	public static String browser = "firefox";
 	public static String baseURL = "http://www.adactin.com/HotelAppBuild2/";
 
+	private static Logger logger = Logger.getGlobal();
+	
 	public static void createDriver() {
 		createDriver(browser);
 		OpenURL(baseURL);
-		System.out.println(driver.toString());
+		logger.info(driver.toString());
 	}
 
 	public static void createDriver(final String browserId) {
@@ -34,7 +37,7 @@ public class MyWebDriver {
 
 	public static void closeDriver() {
 		driver.quit();
-		System.out.println("Application is closed");
+		logger.info("Application is closed");
 	}
 
 	public static void sendKeys(String id, String value, boolean clear) {
@@ -42,24 +45,24 @@ public class MyWebDriver {
 			MyWebDriver.driver.findElement(By.id(id)).clear();
 		}
 		MyWebDriver.driver.findElement(By.id(id)).sendKeys(value);
-		System.out.println("Send keys for id: " + id + " value: " + value);
+		logger.info("Send keys for id: " + id + " value: " + value);
 	}
 
 	public static void clickButton(String button) {
 		MyWebDriver.driver.findElement(By.id(button)).click();
-		System.out.println("Button '" + button + "' is clicked");
+		logger.info("Button '" + button + "' is clicked");
 	}
 
 	public static void clickLink(String link) {
 		MyWebDriver.driver.findElement(By.partialLinkText(link)).click();
-		System.out.println("Link '" + link + "' is clicked");
+		logger.info("Link '" + link + "' is clicked");
 	}
 
 	public static void assertElement(String id, String expected) {
 		String actual = MyWebDriver.driver.findElement(By.id(id)).getAttribute("value").toString();
 		Assert.assertTrue(expected.equals(actual));
-		System.out.println("EXPECTED: Price per night is " + expected);
-		System.out.println("ACTUAL: Price per night is " + actual);
+		logger.info("EXPECTED: Price per night is " + expected);
+		logger.info("ACTUAL: Price per night is " + actual);
 
 	}
 	
