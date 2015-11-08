@@ -10,10 +10,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class MyWebDriver {
 
-	public static FirefoxDriver driver = null;
+	private static FirefoxDriver driver = null;
 
-	public static String browser = "firefox";
-	public static String baseURL = "http://www.adactin.com/HotelAppBuild2/";
+	private static String browser = "firefox";
+	private static String baseURL = "http://www.adactin.com/HotelAppBuild2/";
 
 	private static Logger logger = Logger.getGlobal();
 	
@@ -42,28 +42,57 @@ public class MyWebDriver {
 
 	public static void sendKeys(String id, String value, boolean clear) {
 		if (clear) {
-			MyWebDriver.driver.findElement(By.id(id)).clear();
+			driver.findElement(By.id(id)).clear();
 		}
-		MyWebDriver.driver.findElement(By.id(id)).sendKeys(value);
+		driver.findElement(By.id(id)).sendKeys(value);
 		logger.info("Send keys for id: " + id + " value: " + value);
 	}
 
 	public static void clickButton(String button) {
-		MyWebDriver.driver.findElement(By.id(button)).click();
+		driver.findElement(By.id(button)).click();
 		logger.info("Button '" + button + "' is clicked");
 	}
 
 	public static void clickLink(String link) {
-		MyWebDriver.driver.findElement(By.partialLinkText(link)).click();
+		driver.findElement(By.partialLinkText(link)).click();
 		logger.info("Link '" + link + "' is clicked");
 	}
 
 	public static void assertElement(String id, String expected) {
-		String actual = MyWebDriver.driver.findElement(By.id(id)).getAttribute("value").toString();
+		String actual = driver.findElement(By.id(id)).getAttribute("value").toString();
 		Assert.assertTrue(expected.equals(actual));
 		logger.info("EXPECTED: Price per night is " + expected);
 		logger.info("ACTUAL: Price per night is " + actual);
 
 	}
 	
+	public static void assertText(String name, String value) {
+		String idName = name.split("=")[0];
+		String idValue = value.split("=")[0];
+		logger.info("EXPECTED: " + value.split("=")[1]);
+		if (idName.equals("id")) {
+			if (idValue.equals("text")) {
+				Assert.assertTrue(value.split("=")[1].equals(driver.findElement(By.id(name.split("=")[1])).getText()));
+				logger.info("ACTUAL: " + driver.findElement(By.id(name.split("=")[1])).getText());
+			}
+			else {
+				Assert.assertTrue(value.split("=")[1].equals(driver.findElement(By.id(name.split("=")[1])).getAttribute(value.split("=")[0])));
+				logger.info("ACTUAL: " + driver.findElement(By.id(name.split("=")[1])).getAttribute(value.split("=")[0]));
+			}
+		}
+		if (idName.equals("class")) {
+			if (idValue.equals("text")) {
+				Assert.assertTrue(value.split("=")[1].equals(driver.findElement(By.className(name.split("=")[1])).getText()));
+				logger.info("ACTUAL: " + driver.findElement(By.className(name.split("=")[1])).getText());
+			}
+			else {
+				System.out.println("#class#: ");
+			}
+		}
+		
+	}
+	
+	public static void assertTitle(String value) {
+		Assert.assertTrue(value.equals(MyWebDriver.driver.getTitle()));
+	}
 }

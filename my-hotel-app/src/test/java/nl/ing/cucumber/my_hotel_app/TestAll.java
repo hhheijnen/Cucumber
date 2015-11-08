@@ -8,10 +8,10 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 				features = 	"Feature",
 				glue = 		"nl.ing.cucumber.stepDefinitions",
-				tags = 		{"@All"},
-				plugin = 	{ "progress",
-							"html:target/html-report-all"
-	        				}
+				tags = 		{"@All"}
+				//plugin = 	{ "progress",
+				//			"html:target/html-report-all"
+	        	//			}
 				)
 
 public class TestAll {

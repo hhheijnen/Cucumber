@@ -1,6 +1,12 @@
 package nl.ing.cucumber.my_hotel_app;
 
+import javax.jms.ConnectionFactory;
+
+import com.tibco.tibjms.*;
+
 public class MyJMS {
 	
-	//ConnectionFactory factory = new ConnectionFactory();
+	String serverURL = "tcp://localhost:7111,tcp://localhost:7222";
+	
+	ConnectionFactory factory = new TibjmsConnectionFactory(serverURL);
 }
