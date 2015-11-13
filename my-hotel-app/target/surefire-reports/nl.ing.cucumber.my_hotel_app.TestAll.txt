@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: nl.ing.cucumber.my_hotel_app.TestAll
 -------------------------------------------------------------------------------
-Tests run: 113, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 48.469 sec
+Tests run: 113, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 50.396 sec
