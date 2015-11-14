@@ -1,25 +1,30 @@
 package nl.ing.cucumber.my_hotel_app;
 
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Logger;
 
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-//import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class MyWebDriver {
 
 	private static FirefoxDriver driver = null;
-
 	private static String browser = "firefox";
 	private static String baseURL = "http://www.adactin.com/HotelAppBuild2/";
 
-	private static Logger logger = Logger.getGlobal();
+	private static Logger rootLog = Logger.getRootLogger();
+	private static Logger logger = Logger.getLogger(MyWebDriver.class.getPackage().getName());
 	
 	public static void createDriver() {
 		createDriver(browser);
 		OpenURL(baseURL);
+		
+		BasicConfigurator.configure();;
+		rootLog.setLevel(Level.INFO);
+		logger.setLevel(Level.INFO);
 		logger.info(driver.toString());
 	}
 
